@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/star"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityHW">
+
+    <!--맨위-->>
+    <LinearLayout
+        android:id="@+id/ll_a"
+        android:orientation="horizontal"
+        android:background="#FFEB3B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cross" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/menu" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/search" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/setting" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--음악파일-->>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/chet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:text="It could Happen To you"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Chet Baker"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/redheart" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/btnplay" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/listbtn" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--프로필-->>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/me"/>
+
+        <TextView
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:text="서해윤"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center|top" />
+
+    </LinearLayout>
+
+    <!--메세지 보내기-->>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#FFEB3B"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/message"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프로필 보러가기"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

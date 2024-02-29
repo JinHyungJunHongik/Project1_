@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroductionActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_image_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_introduction_top">
+
+        <ImageView
+            android:id="@+id/iv_intro_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_1" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tv_top_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="양동원"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/tv_pageName"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_pagename"
+            android:gravity="center"
+            android:text="Profile" />
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_image_background"
+        app:layout_constraintBottom_toTopOf="@id/ll_selector"/>
+
+    <LinearLayout
+        android:id="@+id/ll_selector"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_page1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_bias="0.2"
+            android:text="Info"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/btn_introduction_bg"/>
+        <TextView
+            android:id="@+id/tv_page2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_bias="0.2"
+            android:text="pet"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/btn_introduction_bg"/>
+        <TextView
+            android:id="@+id/tv_page3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_bias="0.2"
+            android:text="Photo"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/btn_introduction_bg"/>
+        <TextView
+            android:id="@+id/tv_page4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_bias="0.2"
+            android:text="Chat"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/btn_introduction_bg"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

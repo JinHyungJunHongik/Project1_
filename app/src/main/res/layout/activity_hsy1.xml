@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bit_5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/hsy_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/bit_6"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="36dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/hsy_img_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hsy_img_profile" />
+            <!--tools:srcCompat="@tools:sample/avatars"-->
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/hsy_ll_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintStart_toEndOf="@id/hsy_img_profile">
+
+            <TextView
+                android:id="@+id/hsy_is"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galmuri11_bold"
+                android:text="@string/hsy_is"
+                android:textColor="@color/bit_1"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/hsy_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/dos_saemmul"
+                android:text="@string/hsy_phone"
+                android:textColor="@color/bit_1"
+
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/hsy_blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dos_saemmul"
+                android:text="@string/hsy_blog"
+                android:textColor="@color/bit_1"
+
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hsy_ll_qs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bit_1"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hsy_ll_top">
+
+        <TextView
+            android:id="@+id/hsy_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galmuri11_bold"
+            android:text="@string/hsy_q1"
+            android:textAlignment="center"
+            android:textColor="@color/bit_5"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hsy_ll_gifs"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/bit_5"
+        app:layout_constraintTop_toBottomOf="@id/hsy_ll_qs">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="38dp"
+            android:src="@drawable/hsy_gif1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5" />
+    </LinearLayout>
+    <!-- 고양이 gif 출처 https://tenor.com/ko/view/white-cat-gif-18080235280656022846 -->
+
+    <LinearLayout
+        android:id="@+id/hsy_discs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bit_5"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hsy_ll_gifs">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dos_pilgi"
+            android:text="@string/hsy_disc1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/bit_1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <android.widget.Button
+        android:id="@+id/btn_to_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dos_gothic"
+        android:text=" 다음으로 ➟ "
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="@drawable/hsy_button"
+        android:textColor="@color/bit_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hsy_discs"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

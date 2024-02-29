@@ -1,0 +1,22 @@
+<resources>
+    <string name="hashtag_1">ENTJ</string>
+    <string name="hashtag_2">작곡</string>
+    <string name="hashtag_3">맛집탐방</string>
+
+    <string name="disc_1">TMI 1. 집에서 강아지를 키우고 있어요!</string>
+    <string name="disc_2">TMI 2. 요즘 소화가 안 되어서 파인애플 피자를 사서 먹게 됩니다.</string>
+    <string name="disc_3">TMI 3. 못 먹는 음식: 피클</string>
+    <string name="hsy_is">황수영</string>
+    <string name="hsy_phone">+82) 010 2650 5082</string>
+    <string name="hsy_blog">https://velog.io/@agriades</string>
+
+    <string name="hsy_q1">자기소개</string>
+    <string name="hsy_q2">해당 과정을\n선택한 이유?</string>
+    <string name="hsy_q3">TMI 하나만\n알려주세요</string>
+
+
+    <string name="hsy_disc1">"안녕하세요 여러분! 만나서 반갑습니다. 저는 게임회사 사업팀에서 잠시 근무하다 현재는 쉬고 있고, 개발자로서 재취업을 목표로 하고 있어요."</string>
+    <string name="hsy_disc2">앱 트랙: 앱 개발은 바로 변화를 확인할 수 있어 동기부여가 잘 된다!\n\n안드로이드: 갤럭시 애호가 + 처음 공부할 때 iOS보다 장점이 많다는 소문을 들음!</string>
+    <string name="hsy_disc3">"예전에는 파인애플 피자를 피해 다녔는데, 요즘엔 일부러 사서 먹어요.\n\n그냥 피자보다 소화가 더 잘 되는 느낌이 들어요!"</string>
+
+</resources>

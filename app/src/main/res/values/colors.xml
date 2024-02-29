@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bit_6">#000000</color>
+    <color name="bit_5">#021e07</color>
+    <color name="bit_4">#0b5c04</color>
+    <color name="bit_3">#198908</color>
+    <color name="bit_2">#31c110</color>
+    <color name="bit_1">#48fb00</color>
+    <color name="bit_0">#ffffff</color>
+</resources>

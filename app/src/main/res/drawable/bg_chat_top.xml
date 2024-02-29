@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFB549"/> <!-- 내부 색상 -->
+<!--    <corners android:radius="100dp"/> &lt;!&ndash; 모서리의 둥근 정도 &ndash;&gt;-->
+    <!--    <stroke android:color="#FFB549" android:width="4dp"/> &lt;!&ndash; 모서리 색상과 두께 &ndash;&gt;-->
+</shape>
